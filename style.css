@@ -46,6 +46,7 @@ nav ul li {
 }
 #perkenalan {
   color: #d7d7d7;
+  text-align: justify;
 }
 nav ul li:not(.active)::after {
   content: "";
@@ -83,12 +84,15 @@ nav ul li a.active {
 }
 
 .profile {
-  text-align: justify;
   line-height: 2;
+  text-align: justify;
+  max-width: 100%;
+  text-align: center;
 }
 
 .photo {
   margin-bottom: 15px;
+  margin-top: 30px;
 }
 
 .bulat {
@@ -96,8 +100,9 @@ nav ul li a.active {
 }
 
 #profile {
+  max-width: 100%;
   width: 200px;
-  height: 200px;
+  height: auto;
 }
 
 .center {
@@ -182,7 +187,7 @@ nav ul li a.active {
 }
 
 .containers {
-  margin: 0px 150px 0 150px;
+  margin: 0px 70px 0 70px;
 }
 
 .komponen {
