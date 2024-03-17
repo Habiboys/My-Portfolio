@@ -79,7 +79,7 @@ nav ul li a.active {
 }
 
 .content {
-  margin: 20px 0px 0px 0px;
+  margin: 20px 0px 70px 0px;
 }
 
 .profile {
@@ -212,6 +212,7 @@ nav ul li a.active {
 }
 .contentedu {
   margin-top: 30px;
+  margin-bottom: 200px;
 }
 .education {
   color: #d7d7d7;
