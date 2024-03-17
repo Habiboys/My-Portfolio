@@ -2,29 +2,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Playfair Display", serif;
+  font-family: "Gemunu Libre", sans-serif;
 }
-.containers {
-  width: 100%;
-  height: 100vh;
+body {
+  background-color: #222;
+}
 
-  align-items: center;
-}
 .judul {
-  font-family: "Great Vibes", cursive;
+  font-family: "Gemunu Libre", sans-serif;
   display: flex;
   justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 25px;
-  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-size: 35px;
+  color: #d7d7d7;
+  text-align: center;
 }
 
 nav {
-  padding: 10px;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
+nav ul {
+  padding: 0;
+  text-align: center;
+}
 nav ul li {
   font-family: "Poppins", sans-serif;
   list-style: none;
@@ -38,11 +42,14 @@ nav ul li {
   position: relative;
   z-index: 2;
   transition: color 0.5s;
+  text-align: center;
 }
-
+#perkenalan {
+  color: #d7d7d7;
+}
 nav ul li:not(.active)::after {
   content: "";
-  background-color: #f44566;
+  background-color: #0a7ef9;
   width: 100%;
   height: 100%;
   border-radius: 30px;
@@ -56,7 +63,7 @@ nav ul li:not(.active)::after {
 }
 
 nav ul li:hover a {
-  color: #fff;
+  color: #d7d7d7;
 }
 nav ul li:hover::after {
   top: 50%;
@@ -68,7 +75,7 @@ nav ul li a {
 }
 
 nav ul li a.active {
-  color: #f44566; /* Ubah warna tulisan menjadi merah saat menu diakses */
+  color: #0a7ef9; /* Ubah warna tulisan menjadi merah saat menu diakses */
 }
 
 .content {
@@ -104,24 +111,23 @@ nav ul li a.active {
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-card {
-  width: 300px;
+  width: 250px; /* Set a fixed width for the project cards */
   margin-bottom: 20px;
-  height: 225px;
-  padding: 10px;
-  background-color: #ffffff;
-  border-radius: 10px;
+  height: 260px;
+  background-color: #333;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  margin: 10px;
 }
 
 .project-card img {
   width: 100%;
-  border-radius: 5px;
-  transition: transform 0.3s; /* Tambahkan transisi untuk transform */
+  transition: transform 0.3s;
 }
 
 .project-card:hover {
@@ -132,80 +138,107 @@ nav ul li a.active {
 
 .project-card h3 {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 20px;
+  margin: 10px 15px 0px 15px;
 }
 
 .project-card p {
-  margin-top: 5px;
+  font-size: 16px;
+  margin: 15px 15px 0px 15px;
+  color: #777;
 }
 
 .project-card a {
   text-decoration: none;
-  color: black;
+  color: #d7d7d7;
 }
 
 .project-card a:hover {
   text-decoration: none;
-  color: #f44566;
+  transition: background-color 0.3s;
+}
+
+.project-card h3 {
+  margin-top: 10px;
+  font-size: 22px;
+  margin: 10px 15px 0px 15px;
+}
+
+.project-card p {
+  font-size: 16px;
+  margin: 15px 15px 0px 15px;
+  color: #777;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #d7d7d7;
+}
+
+.project-card a:hover {
+  text-decoration: none;
 
   transition: background-color 0.3s;
 }
 
 .containers {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.laravel {
-  background-color: red;
+  margin: 0px 150px 0 150px;
 }
 
 .komponen {
   display: flex;
   flex-direction: row;
-  margin-top: 5px;
+  margin: 20px 15px 0px 15px;
 }
 .item {
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
-.bulat {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  margin-right: 5px;
-}
-
-.merah {
-  background-color: red;
-}
-
-.hijau {
-  background-color: green;
-}
-
-.mysql {
-  background-color: #00758f;
-}
-
-.react {
-  background-color: #61dafb;
-}
-.js {
-  background-color: #ffff00;
-}
-.lain {
-  background-color: #777;
-}
 .info {
-  font-size: 14px;
+  font-size: 12px;
+  background-color: #0a7ef9;
+  border-radius: 100px;
+  padding: 5px 8px;
 }
-.vue{
-  background-color: #42b883;
+
+.footer {
+  margin-top: 50px;
+  background-color: #333; /* Sesuaikan dengan warna latar belakang web Anda */
+  color: #d7d7d7;
+  padding: 20px;
+  text-align: center;
 }
-.vite{
-  background-color: #2C3E50;
+.contentedu {
+  margin-top: 30px;
+}
+.education {
+  color: #d7d7d7;
+  background: #333;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px 0px 10px 0px;
+  display: flex;
+}
+
+.education h3 {
+  color: #d7d7d7;
+  margin-bottom: 10px;
+}
+.education p {
+  color: #777;
+}
+.education-nomor {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 5px 30px 5px 15px;
+}
+.prestasi {
+  color: #777;
+  font-size: 20px;
+  padding: 120px 120px 120px 120px;
+  font-weight: bolder;
+  text-align: center;
 }
